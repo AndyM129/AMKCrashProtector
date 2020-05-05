@@ -22,7 +22,7 @@ pod 'AMKCrashProtector'
 
 ## Author
 
-AndyM129, andy_m12@163.com
+Andy Meng, andy_m129@163.com
 
 ## License
 
