@@ -23,13 +23,20 @@ Pod::Spec.new do |s|
     
     # 默认
     s.subspec 'DefaultSubspec' do |defaultSubspec|
-        defaultSubspec.dependency 'BDECrashProtector/Protector'
+        defaultSubspec.dependency 'AMKCrashProtector/Protector'
+    end
+
+    # UnrecognizedSelector 保护
+    s.subspec 'UnrecognizedSelectorProtector' do |protector|
+        protector.public_header_files = 'AMKCrashProtector/Classes/UnrecognizedSelectorProtector/**/*.h'
+        protector.source_files = 'AMKCrashProtector/Classes/UnrecognizedSelectorProtector/*.{h,m}'
+        protector.dependency 'AMKCrashProtector/Protector'
     end
 
     # 异常收集&管理
     s.subspec 'Protector' do |protector|
-       protector.public_header_files = 'AMKCrashProtector/Classes/Protector/**/*.h'
-       protector.source_files = 'AMKCrashProtector/Classes/Protector/*.{h,m}'
-       protector.dependency 'AMKCategories/Foundation/NSObject/MethodSwizzling'
+        protector.public_header_files = 'AMKCrashProtector/Classes/Protector/**/*.h'
+        protector.source_files = 'AMKCrashProtector/Classes/Protector/*.{h,m}'
+        protector.dependency 'AMKCategories/Foundation/NSObject/MethodSwizzling'
     end
 end

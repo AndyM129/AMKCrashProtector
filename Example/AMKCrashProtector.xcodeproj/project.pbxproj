@@ -24,6 +24,7 @@
 		71719F9F1E33DC2100824A3D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 71719F9D1E33DC2100824A3D /* LaunchScreen.storyboard */; };
 		873B8AEB1B1F5CCA007FD442 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 873B8AEA1B1F5CCA007FD442 /* Main.storyboard */; };
 		885FCFB9246161C200E504D4 /* AMKCrashProtectorTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 885FCFB8246161C200E504D4 /* AMKCrashProtectorTests.m */; };
+		885FCFBF246167D300E504D4 /* AMKCPUnrecognizedSelectorProtectorTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 885FCFBE246167D300E504D4 /* AMKCPUnrecognizedSelectorProtectorTests.m */; };
 		C99739F877BF9E89259AB711 /* libPods-AMKCrashProtector_Tests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B822A07D947351BC214431C1 /* libPods-AMKCrashProtector_Tests.a */; };
 /* End PBXBuildFile section */
 
@@ -63,6 +64,7 @@
 		71719F9E1E33DC2100824A3D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		873B8AEA1B1F5CCA007FD442 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Main.storyboard; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		885FCFB8246161C200E504D4 /* AMKCrashProtectorTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AMKCrashProtectorTests.m; sourceTree = "<group>"; };
+		885FCFBE246167D300E504D4 /* AMKCPUnrecognizedSelectorProtectorTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AMKCPUnrecognizedSelectorProtectorTests.m; sourceTree = "<group>"; };
 		898B26742BE797ECA4E78E6D /* Pods-AMKCrashProtector_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AMKCrashProtector_Example.debug.xcconfig"; path = "Target Support Files/Pods-AMKCrashProtector_Example/Pods-AMKCrashProtector_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		B822A07D947351BC214431C1 /* libPods-AMKCrashProtector_Tests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-AMKCrashProtector_Tests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		BDEEFDC9E8F0204FB5D2C4FC /* AMKCrashProtector.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = AMKCrashProtector.podspec; path = ../AMKCrashProtector.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
@@ -174,6 +176,7 @@
 			children = (
 				6003F5BB195388D20070C39A /* Tests.m */,
 				885FCFB8246161C200E504D4 /* AMKCrashProtectorTests.m */,
+				885FCFBE246167D300E504D4 /* AMKCPUnrecognizedSelectorProtectorTests.m */,
 				6003F5B6195388D20070C39A /* Supporting Files */,
 			);
 			path = Tests;
@@ -363,6 +366,7 @@
 			files = (
 				885FCFB9246161C200E504D4 /* AMKCrashProtectorTests.m in Sources */,
 				6003F5BC195388D20070C39A /* Tests.m in Sources */,
+				885FCFBF246167D300E504D4 /* AMKCPUnrecognizedSelectorProtectorTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
