@@ -8,6 +8,10 @@
 
 #import "AMKAppDelegate.h"
 
+@interface AMKAppDelegate ()
+
+@end
+
 @implementation AMKAppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {

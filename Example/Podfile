@@ -1,13 +1,11 @@
-use_frameworks!
-
+source 'https://github.com/CocoaPods/Specs.git'
 platform :ios, '8.0'
+inhibit_all_warnings!
 
 target 'AMKCrashProtector_Example' do
-  pod 'AMKCrashProtector', :path => '../'
-
-  target 'AMKCrashProtector_Tests' do
-    inherit! :search_paths
-
+    pod 'AMKCrashProtector/Protector', :path => '../'
     
-  end
+    target 'AMKCrashProtector_Tests' do
+        inherit! :search_paths
+    end
 end
