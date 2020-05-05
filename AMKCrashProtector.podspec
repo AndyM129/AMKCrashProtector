@@ -26,7 +26,14 @@ Pod::Spec.new do |s|
         defaultSubspec.dependency 'AMKCrashProtector/Protector'
     end
 
-    # UnrecognizedSelector 保护
+    # NSKeyValueCoding 相关保护
+    s.subspec 'NSKeyValueCodingProtector' do |protector|
+        protector.public_header_files = 'AMKCrashProtector/Classes/NSKeyValueCodingProtector/**/*.h'
+        protector.source_files = 'AMKCrashProtector/Classes/NSKeyValueCodingProtector/*.{h,m}'
+        protector.dependency 'AMKCrashProtector/Protector'
+    end
+    
+    # UnrecognizedSelector 相关保护
     s.subspec 'UnrecognizedSelectorProtector' do |protector|
         protector.public_header_files = 'AMKCrashProtector/Classes/UnrecognizedSelectorProtector/**/*.h'
         protector.source_files = 'AMKCrashProtector/Classes/UnrecognizedSelectorProtector/*.{h,m}'
