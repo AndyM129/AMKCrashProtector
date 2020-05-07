@@ -30,6 +30,7 @@ Pod::Spec.new do |s|
     s.subspec 'Bugly' do |bugly|
         bugly.source_files = 'AMKCrashProtector/Classes/Bugly/*.{h,m}'
         bugly.public_header_files = 'AMKCrashProtector/Classes/Bugly/*.h'
+        bugly.dependency 'AMKCrashProtector/Protector'
         bugly.dependency 'Bugly'
     end
     
