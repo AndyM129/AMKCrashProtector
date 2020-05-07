@@ -3,9 +3,11 @@ platform :ios, '8.0'
 inhibit_all_warnings!
 
 target 'AMKCrashProtector_Example' do
-    pod 'AMKCrashProtector/Protector', :path => '../'
-    pod 'AMKCrashProtector/UnrecognizedSelectorProtector', :path => '../'
-    pod 'AMKCrashProtector/NSKeyValueCodingProtector', :path => '../'
+    pod 'AMKCrashProtector', :path => '../', :subspecs => [
+      'UnrecognizedSelectorProtector',
+      'NSKeyValueCodingProtector',
+      'MPMoviePlayerViewControllerProtector',
+    ]
 
     target 'AMKCrashProtector_Tests' do
         inherit! :search_paths

@@ -26,6 +26,13 @@ Pod::Spec.new do |s|
         defaultSubspec.dependency 'AMKCrashProtector/Protector'
     end
 
+    # MPMoviePlayerViewController 相关保护
+    s.subspec 'MPMoviePlayerViewControllerProtector' do |protector|
+        protector.public_header_files = 'AMKCrashProtector/Classes/MPMoviePlayerViewControllerProtector/**/*.h'
+        protector.source_files = 'AMKCrashProtector/Classes/MPMoviePlayerViewControllerProtector/*.{h,m}'
+        protector.dependency 'AMKCrashProtector/Protector'
+    end
+    
     # NSKeyValueCoding 相关保护
     s.subspec 'NSKeyValueCodingProtector' do |protector|
         protector.public_header_files = 'AMKCrashProtector/Classes/NSKeyValueCodingProtector/**/*.h'
