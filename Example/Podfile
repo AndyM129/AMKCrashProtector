@@ -7,6 +7,7 @@ target 'AMKCrashProtector_Example' do
       'UnrecognizedSelectorProtector',
       'NSKeyValueCodingProtector',
       'MPMoviePlayerViewControllerProtector',
+      'Bugly',
     ]
 
     target 'AMKCrashProtector_Tests' do

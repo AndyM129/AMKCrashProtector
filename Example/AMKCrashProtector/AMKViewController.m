@@ -7,6 +7,8 @@
 //
 
 #import "AMKViewController.h"
+//#import <AMKCrashProtector/AMKCrashProtector+Bugly.h>
+//#import <Bugly/Bugly.h>
 
 @interface AMKViewController ()
 
@@ -36,6 +38,15 @@
     self.title = @"AMKCrashProtector";
     self.view.backgroundColor = self.view.backgroundColor?:[UIColor whiteColor];
 
+//    [Bugly startWithAppId:@"99e74ce8c2"];
+//
+//    AMKCrashProtector.BuglyEnable = YES;
+//
+//    @try {
+//        [NSException raise:@"ExceptionName" format:@"ExceptionDescription"];
+//    } @catch (NSException *exception) {
+//        [AMKCrashProtector didHandleException:exception];
+//    }
 }
 
 - (void)viewWillAppear:(BOOL)animated {
@@ -73,6 +84,5 @@
 #pragma mark - Override
 
 #pragma mark - Helper Methods
-
 
 @end

@@ -25,7 +25,14 @@ Pod::Spec.new do |s|
     s.subspec 'DefaultSubspec' do |defaultSubspec|
         defaultSubspec.dependency 'AMKCrashProtector/Protector'
     end
-
+    
+    # Bugly 上报
+    s.subspec 'Bugly' do |bugly|
+        bugly.source_files = 'AMKCrashProtector/Classes/Bugly/*.{h,m}'
+        bugly.public_header_files = 'AMKCrashProtector/Classes/Bugly/*.h'
+        bugly.dependency 'Bugly'
+    end
+    
     # MPMoviePlayerViewController 相关保护
     s.subspec 'MPMoviePlayerViewControllerProtector' do |protector|
         protector.public_header_files = 'AMKCrashProtector/Classes/MPMoviePlayerViewControllerProtector/**/*.h'

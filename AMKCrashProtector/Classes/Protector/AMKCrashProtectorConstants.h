@@ -11,6 +11,11 @@
 /// Crash保护 处理
 @protocol AMKCrashProtectHandlerProtocol <NSObject>
 
+@optional
+
+/// 收到并处理异常
++ (void)crashProtector:(AMKCrashProtector *)crashProtector didHandleException:(NSException *)exception;
+
 /// 收到并处理异常
 - (void)crashProtector:(AMKCrashProtector *)crashProtector didHandleException:(NSException *)exception;
 
